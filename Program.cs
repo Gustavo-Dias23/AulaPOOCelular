@@ -12,7 +12,8 @@ namespace AulaPOOCelular
             redmi.tamanho = 5;
             redmi.ligado = true;
 
-            Console.WriteLine (redmi.Ligar());
+            Console.WriteLine (redmi.modelo + " " +redmi.cor);
+            Console.WriteLine (redmi.Ligar());  
             Console.WriteLine (redmi.Desligar());
             Console.WriteLine (redmi.FazerLigacao());
             Console.WriteLine (redmi.EnviarMensagem());

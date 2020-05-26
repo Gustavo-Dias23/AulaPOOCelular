@@ -6,31 +6,39 @@ namespace AulaPOOCelular
         public string modelo;
         public int tamanho;
         public bool ligado;
-
         public string Ligar(){
-            return "Ligando...";
-            
             if(ligado){
                 return "O celular ja esta ligado.";
-            }          
+            }
+            else{
+                return "Ligando...";
+            }
+                      
         }  
         public string Desligar(){
-            return "Desligando...";
-
-            if(!ligado){
-                return "O celular ja esta desligado";
+            if(ligado)
+            {
+                return "Desligando...";
+            }
+            else{
+                return "O celular já está desligado.";
             }
         }
         public string FazerLigacao(){
-            return "Chamando...";
-
             if(!ligado){
                 return "Nao e possivel fazer uma ligacao com o celular desligado.";
             }
+            else{
+                return "Chamando...";
+            }
         }
         public string EnviarMensagem(){
-            return "Mensagem enviada";
-        }
-    
+            if(ligado){
+            return "Mensagem enviada.";
+            }
+            else{
+                return "Nao e possivel enviar mensagem com o celular desligado.";
+            }
+    }
     }
 }
